@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B0F238C8EE00017AA2C /* AppDelegate.swift */; };
-		F0254B12238C8EE00017AA2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B11238C8EE00017AA2C /* SceneDelegate.swift */; };
 		F0254B14238C8EE00017AA2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B13238C8EE00017AA2C /* FirstViewController.swift */; };
 		F0254B16238C8EE00017AA2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B15238C8EE00017AA2C /* SecondViewController.swift */; };
 		F0254B19238C8EE00017AA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0254B17238C8EE00017AA2C /* Main.storyboard */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		F0254B0C238C8EE00017AA2C /* TrackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0254B0F238C8EE00017AA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0254B11238C8EE00017AA2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0254B13238C8EE00017AA2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F0254B15238C8EE00017AA2C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F0254B18238C8EE00017AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,10 +79,9 @@
 		F0254B0E238C8EE00017AA2C /* TrackApp */ = {
 			isa = PBXGroup;
 			children = (
+				F0254B34238C90510017AA2C /* Model */,
+				F0254B33238C90400017AA2C /* ViewController */,
 				F0254B0F238C8EE00017AA2C /* AppDelegate.swift */,
-				F0254B11238C8EE00017AA2C /* SceneDelegate.swift */,
-				F0254B13238C8EE00017AA2C /* FirstViewController.swift */,
-				F0254B15238C8EE00017AA2C /* SecondViewController.swift */,
 				F0254B17238C8EE00017AA2C /* Main.storyboard */,
 				F0254B1A238C8EE20017AA2C /* Assets.xcassets */,
 				F0254B1C238C8EE20017AA2C /* LaunchScreen.storyboard */,
@@ -100,6 +97,22 @@
 				F0254B2A238C8EE20017AA2C /* Info.plist */,
 			);
 			path = TrackAppTests;
+			sourceTree = "<group>";
+		};
+		F0254B33238C90400017AA2C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0254B13238C8EE00017AA2C /* FirstViewController.swift */,
+				F0254B15238C8EE00017AA2C /* SecondViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F0254B34238C90510017AA2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +219,6 @@
 				F0254B16238C8EE00017AA2C /* SecondViewController.swift in Sources */,
 				F0254B14238C8EE00017AA2C /* FirstViewController.swift in Sources */,
 				F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */,
-				F0254B12238C8EE00017AA2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +379,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9T32S589G;
 				INFOPLIST_FILE = TrackApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosapp.chaingrain.TrackApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -384,7 +398,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9T32S589G;
 				INFOPLIST_FILE = TrackApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosapp.chaingrain.TrackApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -402,6 +418,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9T32S589G;
 				INFOPLIST_FILE = TrackAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +440,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9T32S589G;
 				INFOPLIST_FILE = TrackAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
