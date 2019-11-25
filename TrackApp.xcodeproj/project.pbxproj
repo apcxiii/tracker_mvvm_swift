@@ -19,6 +19,7 @@
 		F0254B36238C915E0017AA2C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F0254B35238C915E0017AA2C /* Podfile */; };
 		F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */; };
 		F0254B3C238C954A0017AA2C /* TrackAppRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */; };
+		F0254B3E238C99110017AA2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0254B3D238C99110017AA2C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +45,13 @@
 		F0254B18238C8EE00017AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0254B1A238C8EE20017AA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0254B1D238C8EE20017AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F0254B1F238C8EE20017AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F0254B24238C8EE20017AA2C /* TrackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0254B28238C8EE20017AA2C /* TrackAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppTests.swift; sourceTree = "<group>"; };
 		F0254B2A238C8EE20017AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0254B35238C915E0017AA2C /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppRealm.swift; sourceTree = "<group>"; };
+		F0254B3D238C99110017AA2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5C2E7658F969688274B57A /* Pods_TrackAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,7 +151,7 @@
 		F0254B37238C93660017AA2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0254B1F238C8EE20017AA2C /* Info.plist */,
+				F0254B3D238C99110017AA2C /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,6 +260,7 @@
 				F0254B1E238C8EE20017AA2C /* LaunchScreen.storyboard in Resources */,
 				F0254B1B238C8EE20017AA2C /* Assets.xcassets in Resources */,
 				F0254B36238C915E0017AA2C /* Podfile in Resources */,
+				F0254B3E238C99110017AA2C /* Info.plist in Resources */,
 				F0254B19238C8EE00017AA2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
