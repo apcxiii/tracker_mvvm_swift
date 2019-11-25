@@ -17,6 +17,8 @@
 		F0254B1E238C8EE20017AA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0254B1C238C8EE20017AA2C /* LaunchScreen.storyboard */; };
 		F0254B29238C8EE20017AA2C /* TrackAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B28238C8EE20017AA2C /* TrackAppTests.swift */; };
 		F0254B36238C915E0017AA2C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F0254B35238C915E0017AA2C /* Podfile */; };
+		F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */; };
+		F0254B3C238C954A0017AA2C /* TrackAppRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F0254B28238C8EE20017AA2C /* TrackAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppTests.swift; sourceTree = "<group>"; };
 		F0254B2A238C8EE20017AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0254B35238C915E0017AA2C /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
+		F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppRealm.swift; sourceTree = "<group>"; };
 		FD5C2E7658F969688274B57A /* Pods_TrackAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,9 +113,11 @@
 				F0254B34238C90510017AA2C /* Model */,
 				F0254B33238C90400017AA2C /* ViewController */,
 				F0254B0F238C8EE00017AA2C /* AppDelegate.swift */,
+				F0254B3A238C952C0017AA2C /* Utils */,
 				F0254B17238C8EE00017AA2C /* Main.storyboard */,
 				F0254B1A238C8EE20017AA2C /* Assets.xcassets */,
 				F0254B1C238C8EE20017AA2C /* LaunchScreen.storyboard */,
+				F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */,
 			);
 			path = TrackApp;
 			sourceTree = "<group>";
@@ -147,6 +153,14 @@
 				F0254B1F238C8EE20017AA2C /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0254B3A238C952C0017AA2C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F47E4786F1210CE2780D96E4 /* Frameworks */ = {
@@ -329,6 +343,8 @@
 			files = (
 				F0254B16238C8EE00017AA2C /* SecondViewController.swift in Sources */,
 				F0254B14238C8EE00017AA2C /* FirstViewController.swift in Sources */,
+				F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */,
+				F0254B3C238C954A0017AA2C /* TrackAppRealm.swift in Sources */,
 				F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
