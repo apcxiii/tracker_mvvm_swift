@@ -10,16 +10,20 @@
 		254A35B42F5D60481836565B /* Pods_TrackApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926796A8D61685ADC0315E7C /* Pods_TrackApp.framework */; };
 		48A7776DBA1B1675BA4D6874 /* Pods_TrackAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5C2E7658F969688274B57A /* Pods_TrackAppTests.framework */; };
 		F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B0F238C8EE00017AA2C /* AppDelegate.swift */; };
-		F0254B14238C8EE00017AA2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B13238C8EE00017AA2C /* FirstViewController.swift */; };
 		F0254B16238C8EE00017AA2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B15238C8EE00017AA2C /* SecondViewController.swift */; };
 		F0254B19238C8EE00017AA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0254B17238C8EE00017AA2C /* Main.storyboard */; };
 		F0254B1B238C8EE20017AA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0254B1A238C8EE20017AA2C /* Assets.xcassets */; };
 		F0254B1E238C8EE20017AA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0254B1C238C8EE20017AA2C /* LaunchScreen.storyboard */; };
 		F0254B29238C8EE20017AA2C /* TrackAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B28238C8EE20017AA2C /* TrackAppTests.swift */; };
-		F0254B36238C915E0017AA2C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F0254B35238C915E0017AA2C /* Podfile */; };
 		F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */; };
 		F0254B3C238C954A0017AA2C /* TrackAppRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */; };
-		F0254B3E238C99110017AA2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0254B3D238C99110017AA2C /* Info.plist */; };
+		F0254B40238C9AC90017AA2C /* TrackRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B3F238C9AC90017AA2C /* TrackRoute.swift */; };
+		F0254B42238C9C4B0017AA2C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0254B41238C9C4B0017AA2C /* Location.swift */; };
+		F0254B44238C9CC60017AA2C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0254B43238C9CC60017AA2C /* Default-568h@2x.png */; };
+		F060BEBA238CA5EE0064D428 /* TrackRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEB9238CA5EE0064D428 /* TrackRouteViewController.swift */; };
+		F060BEBC238CA6B20064D428 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEBB238CA6B20064D428 /* FormatDisplay.swift */; };
+		F060BEBE238CA70C0064D428 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEBD238CA70C0064D428 /* UnitExtensions.swift */; };
+		F060BEC1238CA7610064D428 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEC0238CA7610064D428 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,18 +44,24 @@
 		9F477EC63AE49509052AB5F6 /* Pods-TrackAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackAppTests/Pods-TrackAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0254B0C238C8EE00017AA2C /* TrackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0254B0F238C8EE00017AA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0254B13238C8EE00017AA2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F0254B15238C8EE00017AA2C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F0254B18238C8EE00017AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0254B1A238C8EE20017AA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0254B1D238C8EE20017AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0254B24238C8EE20017AA2C /* TrackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0254B28238C8EE20017AA2C /* TrackAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppTests.swift; sourceTree = "<group>"; };
-		F0254B2A238C8EE20017AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0254B2A238C8EE20017AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F0254B35238C915E0017AA2C /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppRealm.swift; sourceTree = "<group>"; };
-		F0254B3D238C99110017AA2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0254B3F238C9AC90017AA2C /* TrackRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRoute.swift; sourceTree = "<group>"; };
+		F0254B41238C9C4B0017AA2C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F0254B43238C9CC60017AA2C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F0254B46238C9DD90017AA2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F060BEB9238CA5EE0064D428 /* TrackRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRouteViewController.swift; sourceTree = "<group>"; };
+		F060BEBB238CA6B20064D428 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		F060BEBD238CA70C0064D428 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
+		F060BEC0238CA7610064D428 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FD5C2E7658F969688274B57A /* Pods_TrackAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +99,7 @@
 		F0254B03238C8EE00017AA2C = {
 			isa = PBXGroup;
 			children = (
+				F0254B43238C9CC60017AA2C /* Default-568h@2x.png */,
 				F0254B35238C915E0017AA2C /* Podfile */,
 				F0254B0E238C8EE00017AA2C /* TrackApp */,
 				F0254B27238C8EE20017AA2C /* TrackAppTests */,
@@ -113,11 +124,12 @@
 				F0254B37238C93660017AA2C /* Supporting Files */,
 				F0254B34238C90510017AA2C /* Model */,
 				F0254B33238C90400017AA2C /* ViewController */,
-				F0254B0F238C8EE00017AA2C /* AppDelegate.swift */,
 				F0254B3A238C952C0017AA2C /* Utils */,
+				F060BEBF238CA7450064D428 /* Managers */,
 				F0254B17238C8EE00017AA2C /* Main.storyboard */,
 				F0254B1A238C8EE20017AA2C /* Assets.xcassets */,
 				F0254B1C238C8EE20017AA2C /* LaunchScreen.storyboard */,
+				F0254B0F238C8EE00017AA2C /* AppDelegate.swift */,
 				F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */,
 			);
 			path = TrackApp;
@@ -126,8 +138,8 @@
 		F0254B27238C8EE20017AA2C /* TrackAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				F0254B45238C9D4F0017AA2C /* Supporting Files */,
 				F0254B28238C8EE20017AA2C /* TrackAppTests.swift */,
-				F0254B2A238C8EE20017AA2C /* Info.plist */,
 			);
 			path = TrackAppTests;
 			sourceTree = "<group>";
@@ -135,8 +147,8 @@
 		F0254B33238C90400017AA2C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F0254B13238C8EE00017AA2C /* FirstViewController.swift */,
 				F0254B15238C8EE00017AA2C /* SecondViewController.swift */,
+				F060BEB9238CA5EE0064D428 /* TrackRouteViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 		F0254B34238C90510017AA2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F0254B3F238C9AC90017AA2C /* TrackRoute.swift */,
+				F0254B41238C9C4B0017AA2C /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,7 +165,7 @@
 		F0254B37238C93660017AA2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0254B3D238C99110017AA2C /* Info.plist */,
+				F0254B46238C9DD90017AA2C /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,8 +174,26 @@
 			isa = PBXGroup;
 			children = (
 				F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */,
+				F060BEBB238CA6B20064D428 /* FormatDisplay.swift */,
+				F060BEBD238CA70C0064D428 /* UnitExtensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F0254B45238C9D4F0017AA2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0254B2A238C8EE20017AA2C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F060BEBF238CA7450064D428 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F060BEC0238CA7610064D428 /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		F47E4786F1210CE2780D96E4 /* Frameworks */ = {
@@ -259,9 +291,8 @@
 			files = (
 				F0254B1E238C8EE20017AA2C /* LaunchScreen.storyboard in Resources */,
 				F0254B1B238C8EE20017AA2C /* Assets.xcassets in Resources */,
-				F0254B36238C915E0017AA2C /* Podfile in Resources */,
-				F0254B3E238C99110017AA2C /* Info.plist in Resources */,
 				F0254B19238C8EE00017AA2C /* Main.storyboard in Resources */,
+				F0254B44238C9CC60017AA2C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,10 +375,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0254B16238C8EE00017AA2C /* SecondViewController.swift in Sources */,
-				F0254B14238C8EE00017AA2C /* FirstViewController.swift in Sources */,
+				F060BEBE238CA70C0064D428 /* UnitExtensions.swift in Sources */,
+				F0254B40238C9AC90017AA2C /* TrackRoute.swift in Sources */,
+				F060BEC1238CA7610064D428 /* LocationManager.swift in Sources */,
 				F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */,
+				F060BEBA238CA5EE0064D428 /* TrackRouteViewController.swift in Sources */,
 				F0254B3C238C954A0017AA2C /* TrackAppRealm.swift in Sources */,
+				F060BEBC238CA6B20064D428 /* FormatDisplay.swift in Sources */,
 				F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */,
+				F0254B42238C9C4B0017AA2C /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9T32S589G;
-				INFOPLIST_FILE = TrackApp/Info.plist;
+				INFOPLIST_FILE = "TrackApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +566,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9T32S589G;
-				INFOPLIST_FILE = TrackApp/Info.plist;
+				INFOPLIST_FILE = "TrackApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,8 +587,8 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9T32S589G;
-				INFOPLIST_FILE = TrackAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = "TrackAppTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosapp.chaingrain.TrackAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackApp.app/TrackApp";
 			};
 			name = Debug;
@@ -574,8 +610,8 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9T32S589G;
-				INFOPLIST_FILE = TrackAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = "TrackAppTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +620,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosapp.chaingrain.TrackAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackApp.app/TrackApp";
 			};
 			name = Release;

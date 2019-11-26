@@ -15,6 +15,7 @@ var window: UIWindow?
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     self.setupRealm()
+    self.setupLocationManager()
     window?.tintColor = UIColor(red:0.99, green:0.47, blue:0.44, alpha:1.0)
     return true
   }
