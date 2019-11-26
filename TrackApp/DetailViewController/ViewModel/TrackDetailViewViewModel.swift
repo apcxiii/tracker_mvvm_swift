@@ -1,14 +1,14 @@
 //
-//  TrackRouteListViewModel.swift
+//  TrackDetailViewViewModel.swift
 //  TrackApp
 //
-//  Created by Erik on 25/11/19.
+//  Created by Erik on 26/11/19.
 //  Copyright © 2019 Erik. All rights reserved.
 //
 
 import Foundation
 
-struct TrackRouteListViewModel {
+struct TrackDetailViewViewModel {
   // MARK: - Properties
   let trackRoute: TrackRoute
   
@@ -37,8 +37,8 @@ struct TrackRouteListViewModel {
       return "-"
     }
   }
-}
-
-extension TrackRouteListViewModel: RouteRepresentable {
   
+  var duration: String {
+    return FormatDisplay.time(trackRoute.duration)
+  }
 }

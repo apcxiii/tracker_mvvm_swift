@@ -23,6 +23,11 @@
 		F060BEBC238CA6B20064D428 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEBB238CA6B20064D428 /* FormatDisplay.swift */; };
 		F060BEBE238CA70C0064D428 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEBD238CA70C0064D428 /* UnitExtensions.swift */; };
 		F060BEC1238CA7610064D428 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060BEC0238CA7610064D428 /* LocationManager.swift */; };
+		F0B3321B238D6C6700386A30 /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33219238D6C6700386A30 /* TrackDetailViewController.swift */; };
+		F0B3321C238D6C6700386A30 /* TrackDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B3321A238D6C6700386A30 /* TrackDetailViewController.xib */; };
+		F0B33220238D790900386A30 /* TrackDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3321F238D790900386A30 /* TrackDetailViewViewModel.swift */; };
+		F0B33222238D86B600386A30 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33221238D86B600386A30 /* MulticolorPolyline.swift */; };
+		F0B33225238D92C600386A30 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33224238D92C600386A30 /* CustomAnnotation.swift */; };
 		F0C9EB7F238CE1C70041C96C /* TrackRouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */; };
 		F0C9EB83238CE66B0041C96C /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9EB81238CE66B0041C96C /* RouteCell.swift */; };
 		F0C9EB84238CE66B0041C96C /* RouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C9EB82238CE66B0041C96C /* RouteCell.xib */; };
@@ -65,6 +70,11 @@
 		F060BEBB238CA6B20064D428 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		F060BEBD238CA70C0064D428 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
 		F060BEC0238CA7610064D428 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F0B33219238D6C6700386A30 /* TrackDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewController.swift; sourceTree = "<group>"; };
+		F0B3321A238D6C6700386A30 /* TrackDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailViewController.xib; sourceTree = "<group>"; };
+		F0B3321F238D790900386A30 /* TrackDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewViewModel.swift; sourceTree = "<group>"; };
+		F0B33221238D86B600386A30 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
+		F0B33224238D92C600386A30 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRouteListViewController.swift; sourceTree = "<group>"; };
 		F0C9EB81238CE66B0041C96C /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
 		F0C9EB82238CE66B0041C96C /* RouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCell.xib; sourceTree = "<group>"; };
@@ -185,6 +195,7 @@
 		F0254B3A238C952C0017AA2C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F0B33221238D86B600386A30 /* MulticolorPolyline.swift */,
 				F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */,
 				F060BEBB238CA6B20064D428 /* FormatDisplay.swift */,
 				F060BEBD238CA70C0064D428 /* UnitExtensions.swift */,
@@ -206,6 +217,22 @@
 				F060BEC0238CA7610064D428 /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		F0B3321E238D78EE00386A30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3321F238D790900386A30 /* TrackDetailViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0B33223238D928C00386A30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0B33224238D92C600386A30 /* CustomAnnotation.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F0C9EB80238CE5F80041C96C /* Views */ = {
@@ -236,6 +263,10 @@
 		F0C9EB8B238CF44C0041C96C /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F0B33223238D928C00386A30 /* View */,
+				F0B3321E238D78EE00386A30 /* ViewModel */,
+				F0B33219238D6C6700386A30 /* TrackDetailViewController.swift */,
+				F0B3321A238D6C6700386A30 /* TrackDetailViewController.xib */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -346,6 +377,7 @@
 				F0254B1B238C8EE20017AA2C /* Assets.xcassets in Resources */,
 				F0254B19238C8EE00017AA2C /* Main.storyboard in Resources */,
 				F0254B44238C9CC60017AA2C /* Default-568h@2x.png in Resources */,
+				F0B3321C238D6C6700386A30 /* TrackDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F060BEBE238CA70C0064D428 /* UnitExtensions.swift in Sources */,
+				F0B33225238D92C600386A30 /* CustomAnnotation.swift in Sources */,
 				F0C9EB7F238CE1C70041C96C /* TrackRouteListViewController.swift in Sources */,
 				F0254B40238C9AC90017AA2C /* TrackRoute.swift in Sources */,
 				F060BEC1238CA7610064D428 /* LocationManager.swift in Sources */,
@@ -436,10 +469,13 @@
 				F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */,
 				F0C9EB88238CED030041C96C /* RouteRepresentable.swift in Sources */,
 				F060BEBA238CA5EE0064D428 /* TrackRouteViewController.swift in Sources */,
+				F0B33222238D86B600386A30 /* MulticolorPolyline.swift in Sources */,
 				F0254B3C238C954A0017AA2C /* TrackAppRealm.swift in Sources */,
 				F060BEBC238CA6B20064D428 /* FormatDisplay.swift in Sources */,
 				F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */,
 				F0254B42238C9C4B0017AA2C /* Location.swift in Sources */,
+				F0B33220238D790900386A30 /* TrackDetailViewViewModel.swift in Sources */,
+				F0B3321B238D6C6700386A30 /* TrackDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

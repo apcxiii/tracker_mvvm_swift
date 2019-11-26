@@ -23,6 +23,13 @@ class TrackRouteListViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.tableView.reloadData()
+    
+    let results = TrackRoute.obtainActiveRoutesSortedByDate()
+    if results != nil && results?.count == 0{
+      self.trackLabel.isHidden = false
+    }else{
+      self.trackLabel.isHidden = true
+    }
   }
   
   
@@ -34,15 +41,7 @@ class TrackRouteListViewController: UIViewController {
     self.tableView.tableFooterView = UIView()
     self.tableView.register(UINib(nibName: "RouteCell", bundle: nil), forCellReuseIdentifier: "kRouteCell")
     
-    
-    let results = TrackRoute.obtainActiveRoutesSortedByDate()
-    if results != nil && results?.count == 0{
-      self.trackLabel.isHidden = false
-    }else{
-      self.trackLabel.isHidden = true
-    }
-    
-    
+    self.trackLabel.text = "Track a\nnew Route!"
   }
   
 }
@@ -86,6 +85,17 @@ extension TrackRouteListViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+    
+    let results = TrackRoute.obtainActiveRoutesSortedByDate()
+    guard let routeModel = results?[indexPath.row] else{
+      fatalError("Unexpected Index Path")
+    }
+    
+    let detailRouteViewController = TrackDetailViewController(nibName: "TrackDetailViewController", bundle: nil)
+    detailRouteViewController.viewModel = TrackDetailViewViewModel(trackRoute: routeModel)
+    let nav = UINavigationController(rootViewController: detailRouteViewController)
+    nav.modalPresentationStyle = .fullScreen
+    self.tabBarController?.present(nav, animated: true, completion: nil)
   }
   
 }

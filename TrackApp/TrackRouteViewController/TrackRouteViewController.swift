@@ -20,6 +20,11 @@ class TrackRouteViewController: UIViewController {
   @IBOutlet weak var mapView: MKMapView!
   
   
+  @IBOutlet weak var saveContainer: UIView!
+  @IBOutlet weak var nameTextfield: UITextField!
+  @IBOutlet weak var saveButton: UIButton!
+  
+  
   private let locationManager = LocationManager.shared
   private var seconds = 0
   private var timer: Timer?
@@ -39,6 +44,7 @@ class TrackRouteViewController: UIViewController {
     self.mapView.layer.cornerRadius = 8
     self.mapView.layer.borderColor = UIColor.black.cgColor
     self.mapView.layer.borderWidth = 3
+    self.mapView.showsUserLocation = true
   }
   
   private func updateDisplay() -> Void{
@@ -89,7 +95,7 @@ class TrackRouteViewController: UIViewController {
   }
   
   private func stopRun() {
-    self.seconds = 0
+    
     self.distanceLabel.text = "Distance:"
     self.timeLabel.text = "Time:"
     self.paceLabel.text = "Pace:"
@@ -98,6 +104,7 @@ class TrackRouteViewController: UIViewController {
     locationManager.stopUpdatingLocation()
     timer?.invalidate()
     self.saveRun()
+    self.seconds = 0
   }
   
   private func saveRun() -> Void {
@@ -152,6 +159,7 @@ extension TrackRouteViewController: CLLocationManagerDelegate {
         self.mapView.addOverlay(MKPolyline(coordinates: coordinates, count: 2))
         let region = MKCoordinateRegion(center: newLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         self.mapView.setRegion(region, animated: true)
+                
       }
       
       locationList.append(newLocation)
@@ -168,5 +176,9 @@ extension TrackRouteViewController: MKMapViewDelegate {
        renderer.strokeColor = .blue
        renderer.lineWidth = 3
        return renderer
+  }
+  
+  func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+    mapView.setCenter(userLocation.coordinate, animated: true)
   }
 }
