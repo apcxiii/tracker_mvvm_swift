@@ -1,5 +1,5 @@
 # Tracker Route App iOS
-> Aplication iOS para grabar una ruta usando Corelocation y Mapkit en tiempo Real, Además  de guardar en dispositivo dichas rutas en RealmSwift
+> Aplication iOS para grabar una ruta usando Corelocation y Mapkit en tiempo Real, Además  de guardar en dispositivo dichas rutas con RealmSwift
 
 [![Swift Version][swift-image]][swift-url]
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
@@ -18,7 +18,7 @@ La aplicación está creada con la arquitectura MVVM
 - [x] Orientación `Portrait`.
 - [x] Desplegar la ruta en el detalle además de Distancia recorrida y duración del recorrido.
 - [x] Compartir imágen de la ruta nativamente (Compose View)
-- [x] Borrado lógico de la ruta
+- [x] Borrado físico de la ruta
 
 ## Requeriminetos
 

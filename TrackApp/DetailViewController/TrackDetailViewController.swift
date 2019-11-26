@@ -105,7 +105,7 @@ class TrackDetailViewController: UIViewController {
       
       if activityError != nil {
         self.alert("", message: activityError!.localizedDescription, dismiss: "Ok")
-      }      
+      }
       if !completed {
         return
       }
