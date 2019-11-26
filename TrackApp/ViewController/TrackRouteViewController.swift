@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import RealmSwift
 
 class TrackRouteViewController: UIViewController {
   
@@ -96,8 +97,34 @@ class TrackRouteViewController: UIViewController {
     self.trackButton.setTitle("Start", for: UIControl.State())
     locationManager.stopUpdatingLocation()
     timer?.invalidate()
+    self.saveRun()
   }
   
+  private func saveRun() -> Void {
+    let newRun = TrackRoute()
+    newRun.active = true
+    newRun.distance = distance.value
+    newRun.duration = self.seconds
+    newRun.timestamp = Date()
+    
+    
+    for location in self.locationList {
+      let locationObject = Location()
+      locationObject.timestamp = location.timestamp
+      locationObject.latitude = location.coordinate.latitude
+      locationObject.longitude = location.coordinate.longitude
+      newRun.locations.append(locationObject)
+    }
+    
+    
+    let realm = try! Realm(configuration: TrackAppRealm.config)
+    try! realm.write {
+      realm.create(TrackRoute.self,value: newRun,update: .error)
+    }
+    
+    
+    
+  }
   // MARK: - Actions functions
   
   @IBAction func trackAction(_ sender: UIButton) {

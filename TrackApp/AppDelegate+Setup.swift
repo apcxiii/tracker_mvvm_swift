@@ -23,8 +23,12 @@ extension AppDelegate {
       if oldSchemaVersion < 2 {
        //add active to TrackRoute model
       }
+      
+      if oldSchemaVersion < 3 {
+       //add name to TrackRoute model
+      }
     }
-    Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: 2, migrationBlock: migrationBlock)
+    Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: 3, migrationBlock: migrationBlock)
     let _ = try! Realm(configuration: TrackAppRealm.config)
   }
   
