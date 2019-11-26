@@ -9,10 +9,16 @@
 import Foundation
 
 struct TrackRouteListViewModel {
+  // MARK: - Properties
   let trackRoute: TrackRoute
   
   var name: String {
-    return trackRoute.name
+    if trackRoute.name.count == 0 {
+      return "-"
+    }else{
+      return trackRoute.name
+    }
+    
   }
   
   var distance: String {

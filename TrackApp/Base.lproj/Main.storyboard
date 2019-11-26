@@ -94,6 +94,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track a new Route!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhE-Sg-f8M">
+                                <rect key="frame" x="32" y="424" width="350" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-d6-9MV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -105,13 +111,16 @@
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="8bE-d6-9MV" secondAttribute="trailing" id="FBv-vB-AKW"/>
                             <constraint firstItem="8bE-d6-9MV" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="Ral-BC-f9S"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="8bE-d6-9MV" secondAttribute="bottom" id="Zqo-Rh-P9Q"/>
+                            <constraint firstItem="xhE-Sg-f8M" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="bwR-G5-cEG"/>
                             <constraint firstItem="8bE-d6-9MV" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="qHA-lX-ggO"/>
+                            <constraint firstItem="xhE-Sg-f8M" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="rkg-9i-dgL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Routes" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="tableView" destination="8bE-d6-9MV" id="ImO-Hs-9OX"/>
+                        <outlet property="trackLabel" destination="xhE-Sg-f8M" id="qVF-xk-ZPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

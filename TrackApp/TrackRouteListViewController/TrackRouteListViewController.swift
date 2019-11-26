@@ -10,7 +10,9 @@ import UIKit
 
 class TrackRouteListViewController: UIViewController {
   
+  //MARK: - Properties
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var trackLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,12 +20,29 @@ class TrackRouteListViewController: UIViewController {
     
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    self.tableView.reloadData()
+  }
+  
   
   private func setupView() -> Void {
+    self.view.backgroundColor = .darkGray
     self.tableView.delegate = self
     self.tableView.dataSource = self
+    self.tableView.backgroundColor = .clear
     self.tableView.tableFooterView = UIView()
     self.tableView.register(UINib(nibName: "RouteCell", bundle: nil), forCellReuseIdentifier: "kRouteCell")
+    
+    
+    let results = TrackRoute.obtainActiveRoutesSortedByDate()
+    if results != nil && results?.count == 0{
+      self.trackLabel.isHidden = false
+    }else{
+      self.trackLabel.isHidden = true
+    }
+    
+    
   }
   
 }
@@ -64,5 +83,9 @@ extension TrackRouteListViewController: UITableViewDataSource {
     return cell
   }
   
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
   
 }

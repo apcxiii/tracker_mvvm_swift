@@ -25,8 +25,7 @@ class RouteCell: UITableViewCell {
       self.timestampLabel.textColor = .white
       
       self.distanceLabel.font = .systemFont(ofSize: 18)
-      self.distanceLabel.textColor = .white
-      
+      self.distanceLabel.textColor = .white      
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
