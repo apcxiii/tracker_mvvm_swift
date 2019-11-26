@@ -129,9 +129,10 @@
 		F0254B0E238C8EE00017AA2C /* TrackApp */ = {
 			isa = PBXGroup;
 			children = (
+				F0C9EB8C238CF4830041C96C /* TrackRouteViewController */,
+				F0C9EB8B238CF44C0041C96C /* DetailViewController */,
 				F0254B37238C93660017AA2C /* Supporting Files */,
-				F0254B34238C90510017AA2C /* Model */,
-				F0254B33238C90400017AA2C /* ViewController */,
+				F0254B33238C90400017AA2C /* TrackRouteListViewController */,
 				F0254B3A238C952C0017AA2C /* Utils */,
 				F060BEBF238CA7450064D428 /* Managers */,
 				F0C9EB80238CE5F80041C96C /* Views */,
@@ -153,15 +154,15 @@
 			path = TrackAppTests;
 			sourceTree = "<group>";
 		};
-		F0254B33238C90400017AA2C /* ViewController */ = {
+		F0254B33238C90400017AA2C /* TrackRouteListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */,
+				F0254B34238C90510017AA2C /* Model */,
 				F0C9EB86238CECE80041C96C /* Protocol */,
 				F0C9EB85238CECD70041C96C /* ViewModel */,
-				F060BEB9238CA5EE0064D428 /* TrackRouteViewController.swift */,
-				F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */,
 			);
-			path = ViewController;
+			path = TrackRouteListViewController;
 			sourceTree = "<group>";
 		};
 		F0254B34238C90510017AA2C /* Model */ = {
@@ -230,6 +231,21 @@
 				F0C9EB87238CED030041C96C /* RouteRepresentable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F0C9EB8B238CF44C0041C96C /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		F0C9EB8C238CF4830041C96C /* TrackRouteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F060BEB9238CA5EE0064D428 /* TrackRouteViewController.swift */,
+			);
+			path = TrackRouteViewController;
 			sourceTree = "<group>";
 		};
 		F47E4786F1210CE2780D96E4 /* Frameworks */ = {
