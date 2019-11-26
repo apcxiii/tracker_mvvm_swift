@@ -60,7 +60,6 @@
 		F0254B1D238C8EE20017AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0254B24238C8EE20017AA2C /* TrackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0254B28238C8EE20017AA2C /* TrackAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppTests.swift; sourceTree = "<group>"; };
-		F0254B2A238C8EE20017AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F0254B35238C915E0017AA2C /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F0254B38238C93DF0017AA2C /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppRealm.swift; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		F0B33224238D92C600386A30 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		F0B33226238DB0AA00386A30 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		F0B33228238DB14D00386A30 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F0B3322A238DB47C00386A30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRouteListViewController.swift; sourceTree = "<group>"; };
 		F0C9EB81238CE66B0041C96C /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
 		F0C9EB82238CE66B0041C96C /* RouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCell.xib; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		F0254B45238C9D4F0017AA2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0254B2A238C8EE20017AA2C /* Info.plist */,
+				F0B3322A238DB47C00386A30 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
