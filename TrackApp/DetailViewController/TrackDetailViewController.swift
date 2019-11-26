@@ -90,6 +90,31 @@ class TrackDetailViewController: UIViewController {
       self.dismissView()
     }
   }
+  @IBAction func shareAction(_ sender: UIButton) -> Void {
+    let image: UIImage = UIImage.imageWithView(self.mapView)
+    var sharedObjects = [AnyObject]()
+    
+    sharedObjects.append(image as AnyObject)
+    //sharedObjects.append("Sharing" as AnyObject)
+    let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
+    activityViewController.popoverPresentationController?.sourceView = self.view
+    
+    activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.mail]
+    
+    activityViewController.completionWithItemsHandler = { (activityType, completed, returnedItems, activityError) in
+      
+      if activityError != nil {
+        self.alert("", message: activityError!.localizedDescription, dismiss: "Ok")
+      }      
+      if !completed {
+        return
+      }
+      
+      
+      
+    }
+    self.present(activityViewController, animated: true, completion: nil)
+  }
   
   //MARK:- map functions
   

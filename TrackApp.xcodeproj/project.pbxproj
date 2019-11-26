@@ -28,6 +28,8 @@
 		F0B33220238D790900386A30 /* TrackDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3321F238D790900386A30 /* TrackDetailViewViewModel.swift */; };
 		F0B33222238D86B600386A30 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33221238D86B600386A30 /* MulticolorPolyline.swift */; };
 		F0B33225238D92C600386A30 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33224238D92C600386A30 /* CustomAnnotation.swift */; };
+		F0B33227238DB0AA00386A30 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33226238DB0AA00386A30 /* UIImage+Extensions.swift */; };
+		F0B33229238DB14D00386A30 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B33228238DB14D00386A30 /* UIViewController+Extensions.swift */; };
 		F0C9EB7F238CE1C70041C96C /* TrackRouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */; };
 		F0C9EB83238CE66B0041C96C /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9EB81238CE66B0041C96C /* RouteCell.swift */; };
 		F0C9EB84238CE66B0041C96C /* RouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C9EB82238CE66B0041C96C /* RouteCell.xib */; };
@@ -75,6 +77,8 @@
 		F0B3321F238D790900386A30 /* TrackDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewViewModel.swift; sourceTree = "<group>"; };
 		F0B33221238D86B600386A30 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
 		F0B33224238D92C600386A30 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		F0B33226238DB0AA00386A30 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		F0B33228238DB14D00386A30 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F0C9EB7E238CE1C70041C96C /* TrackRouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRouteListViewController.swift; sourceTree = "<group>"; };
 		F0C9EB81238CE66B0041C96C /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
 		F0C9EB82238CE66B0041C96C /* RouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCell.xib; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				F0254B3B238C954A0017AA2C /* TrackAppRealm.swift */,
 				F060BEBB238CA6B20064D428 /* FormatDisplay.swift */,
 				F060BEBD238CA70C0064D428 /* UnitExtensions.swift */,
+				F0B33226238DB0AA00386A30 /* UIImage+Extensions.swift */,
+				F0B33228238DB14D00386A30 /* UIViewController+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 				F0254B40238C9AC90017AA2C /* TrackRoute.swift in Sources */,
 				F060BEC1238CA7610064D428 /* LocationManager.swift in Sources */,
 				F0C9EB8A238CED780041C96C /* TrackRouteListViewModel.swift in Sources */,
+				F0B33229238DB14D00386A30 /* UIViewController+Extensions.swift in Sources */,
 				F0C9EB83238CE66B0041C96C /* RouteCell.swift in Sources */,
 				F0254B39238C93DF0017AA2C /* AppDelegate+Setup.swift in Sources */,
 				F0C9EB88238CED030041C96C /* RouteRepresentable.swift in Sources */,
@@ -474,6 +481,7 @@
 				F060BEBC238CA6B20064D428 /* FormatDisplay.swift in Sources */,
 				F0254B10238C8EE00017AA2C /* AppDelegate.swift in Sources */,
 				F0254B42238C9C4B0017AA2C /* Location.swift in Sources */,
+				F0B33227238DB0AA00386A30 /* UIImage+Extensions.swift in Sources */,
 				F0B33220238D790900386A30 /* TrackDetailViewViewModel.swift in Sources */,
 				F0B3321B238D6C6700386A30 /* TrackDetailViewController.swift in Sources */,
 			);

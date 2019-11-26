@@ -19,15 +19,13 @@ class TrackRouteViewController: UIViewController {
   @IBOutlet weak var paceLabel: UILabel!
   @IBOutlet weak var mapView: MKMapView!
   
-  
-  @IBOutlet weak var saveContainer: UIView!
-  @IBOutlet weak var nameTextfield: UITextField!
-  @IBOutlet weak var saveButton: UIButton!
-  
+    
+  var alertAction = UIAlertAction()
   
   private let locationManager = LocationManager.shared
   private var seconds = 0
   private var timer: Timer?
+  private var name: String = ""
   private var distance = Measurement(value: 0, unit: UnitLength.meters).converted(to: .kilometers)
   private var locationList: [CLLocation] = []
   
@@ -95,7 +93,20 @@ class TrackRouteViewController: UIViewController {
   }
   
   private func stopRun() {
-    
+    self.alertAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) { (action) in
+      self.saveAction()
+    }
+    alertAction.isEnabled = false
+    let alert = UIAlertController(title: "Name", message: "Type a name to save the new Route!", preferredStyle: UIAlertController.Style.alert)
+    alert.addTextField { (textField) in
+      textField.placeholder = "Type a Name!"
+      textField.delegate = self
+    }
+    alert.addAction(alertAction)
+    self.present(alert, animated: true, completion: nil)
+  }
+  
+  func saveAction() -> Void {
     self.distanceLabel.text = "Distance:"
     self.timeLabel.text = "Time:"
     self.paceLabel.text = "Pace:"
@@ -105,6 +116,8 @@ class TrackRouteViewController: UIViewController {
     timer?.invalidate()
     self.saveRun()
     self.seconds = 0
+    self.name = ""
+    self.mapView.removeOverlays(mapView.overlays)
   }
   
   private func saveRun() -> Void {
@@ -113,7 +126,7 @@ class TrackRouteViewController: UIViewController {
     newRun.distance = distance.value
     newRun.duration = self.seconds
     newRun.timestamp = Date()
-    
+    newRun.name = self.name
     
     for location in self.locationList {
       let locationObject = Location()
@@ -180,5 +193,23 @@ extension TrackRouteViewController: MKMapViewDelegate {
   
   func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
     mapView.setCenter(userLocation.coordinate, animated: true)
+  }
+}
+
+extension TrackRouteViewController: UITextFieldDelegate {
+  func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    let userEnteredString = textField.text
+    let newString = (userEnteredString! as NSString).replacingCharacters(in: range, with: string) as NSString
+    if  newString != ""{
+      
+        alertAction.isEnabled = true
+    } else {
+        alertAction.isEnabled = false
+    }
+    return true
+  }
+  
+  func textFieldDidEndEditing(_ textField: UITextField) {
+    self.name = textField.text!
   }
 }
