@@ -32,7 +32,7 @@ class TrackAppTests: XCTestCase {
   }
   
   func testDuration() {
-    XCTAssertEqual(viewModel.duration, "0:00:00")
+    XCTAssertEqual(viewModel.duration, "00:00:00")
   }
   
   func testTimeStamp() {
